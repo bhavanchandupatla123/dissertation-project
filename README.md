@@ -56,6 +56,15 @@ Evaluation & interpretation
 Decision-support insights
 ```
 
+## Source code
+
+The `src/` directory contains the Python implementation recovered from the submitted dissertation code appendix and reformatted into readable source files without changing the core modelling logic or project parameters.
+
+- [`src/data_preparation.py`](src/data_preparation.py) — loads, merges and validates the four socio-economic datasets.
+- [`src/eda.py`](src/eda.py) — correlation analysis and visual exploration of education, unemployment and self-employment indicators.
+- [`src/classification_models.py`](src/classification_models.py) — Random Forest and Gradient Boosting classification, confusion matrices, ROC curves and model comparison.
+- [`src/regression_and_recommendation.py`](src/regression_and_recommendation.py) — Decision Tree and Random Forest regression plus the Job Market Trend Recommendation System.
+
 ## Selected results
 
 | Model / Metric | Result |
@@ -97,6 +106,11 @@ Although completed as an academic Data Science project, the workflow maps direct
 ```text
 dissertation-project/
 ├── README.md
+├── src/
+│   ├── data_preparation.py
+│   ├── eda.py
+│   ├── classification_models.py
+│   └── regression_and_recommendation.py
 ├── docs/
 │   ├── methodology.md
 │   └── results.md
